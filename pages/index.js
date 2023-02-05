@@ -2,10 +2,10 @@ import Head from "next/head";
 import { Fragment } from "react";
 
 import CssBaseline from "@mui/material/CssBaseline";
-import Button from '@mui/material/Button';
-
+import Button from "@mui/material/Button";
 
 export default function Home() {
+
   return (
     <Fragment>
       <Head>
@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <CssBaseline />
       <main>
-        <Button variant="contained">Hello World</Button>        
+        <Button variant="contained">Hello World</Button>
       </main>
     </Fragment>
   );
