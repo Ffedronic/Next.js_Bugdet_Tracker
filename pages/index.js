@@ -1,11 +1,9 @@
 import Head from "next/head";
 import { Fragment } from "react";
 
-import CssBaseline from "@mui/material/CssBaseline";
-import Button from "@mui/material/Button";
+import {Button, CssBaseline, Typography} from "@mui/material";
 
 export default function Home() {
-
   return (
     <Fragment>
       <Head>
@@ -17,9 +15,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <CssBaseline />
-      <main>
-        <Button variant="contained">Hello World</Button>
-      </main>
+      <Button color="test" variant="contained">
+        Hello World
+      </Button>
+      <Typography variant="h1">Hello World</Typography>
     </Fragment>
   );
 }
