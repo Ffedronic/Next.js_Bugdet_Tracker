@@ -1,7 +1,16 @@
-import "../styles/global.css"
+import Head from "next/head";
+import Layout from "../components/Layout/Layout";
+import "../styles/global.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
-export default MyApp
+export default MyApp;
