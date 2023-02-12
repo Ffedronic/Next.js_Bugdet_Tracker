@@ -26,11 +26,20 @@ function Layout(props) {
         </nav>
       </header>
 
-      <main>
-        {props.children}
-      </main>
+      <main>{props.children}</main>
 
-      <footer>@felix.fedronic</footer>
+      <footer>
+        <nav>
+          <ul>
+            <li>
+              <Link href={"/budgets/add"}>Add A Budget</Link>
+            </li>
+            <li>
+              <Link href={"/transactions/add"}>Add A Transaction</Link>
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </Fragment>
   );
 }
